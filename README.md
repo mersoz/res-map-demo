@@ -1,18 +1,25 @@
 # res-map
 
-> A Vue.js project
+> A Vue.js project, requests property details from external API and displays them on map. Details are displayed on the marker labels when hovered. 
+
+Access here: https://resmap-69acb.firebaseapp.com/
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# first install dependencies
 npm install
+
+# then run locally (preferred to `npm run dev` after files have been changed to regenerate `dist/build.js`
+npm start
 
 # serve with hot reload at localhost:8080
 npm run dev
 
 # build for production with minification
 npm run build
-```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# deploy to firebase
+firebase serve --project resmap-69acb 
+firebase deploy --only hosting --project resmap-69acb
+```
